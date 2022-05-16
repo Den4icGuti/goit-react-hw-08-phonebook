@@ -8,7 +8,7 @@ const Navigation = () => {
         <Link to="/" className={styles.links}>
           Home
         </Link>
-
+        z
         <Link to="register" className={styles.links}>
           Sign up
         </Link>
