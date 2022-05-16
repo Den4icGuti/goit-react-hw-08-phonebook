@@ -15,7 +15,6 @@ const Navigation = () => {
         <Link to="login" className={styles.links}>
           Sign in
         </Link>
-
         <hr />
       </nav>
     </header>
