@@ -1,8 +1,7 @@
-.links{
-  display: inline-block;
-  padding: 10px;
+.linksNav {
+  margin-left: 10px;
   text-decoration: none;
-  justify-content: space-between;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.5;
 }
-
-

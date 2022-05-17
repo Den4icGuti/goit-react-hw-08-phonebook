@@ -1,0 +1,20 @@
+.userMenu{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.avatar{
+  margin-right: 5px;
+}
+
+.btnLogOut{
+  margin-left: 8px;
+  padding: 8px;
+  border-radius: 25px;
+  border: inherit;
+ 
+}

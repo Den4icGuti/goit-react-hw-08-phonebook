@@ -3,22 +3,11 @@ import styles from '../Navigation/Navigation.module.css';
 
 const Navigation = () => {
   return (
-    <header>
-      <nav>
-        <Link to="/" className={styles.links}>
-          Home
-        </Link>
-        z
-        <Link to="register" className={styles.links}>
-          Sign up
-        </Link>
-        <Link to="login" className={styles.links}>
-          Sign in
-        </Link>
-        <hr />
-      </nav>
-    </header>
+    <nav>
+      <Link to="/" exact="true" className={styles.linksNav}>
+        Home Page
+      </Link>
+    </nav>
   );
 };
-
 export default Navigation;
