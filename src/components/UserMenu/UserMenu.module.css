@@ -16,5 +16,10 @@
   padding: 8px;
   border-radius: 25px;
   border: inherit;
- 
+ transition:background-color 500ms ;
+}
+
+.btnLogOut:hover{
+  background-color: red;
+  color: #fff;
 }
