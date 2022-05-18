@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { register } from 'redux/authOperation';
+import { register } from 'auth/auth-operation';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -40,6 +40,7 @@ const Registration = () => {
       return;
     }
     dispatch(register({ name, email, password }));
+    toast.success(`Congratulations ${name} registration successful!`);
     reset();
   };
 
