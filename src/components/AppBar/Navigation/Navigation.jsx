@@ -7,7 +7,7 @@ const Navigation = () => {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
   return (
     <nav>
-      <Link to="/" exact="true" className={styles.linkHome}>
+      <Link to="*" exact="true" className={styles.linkHome}>
         Home
       </Link>
 
