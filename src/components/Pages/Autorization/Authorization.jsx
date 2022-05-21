@@ -31,8 +31,8 @@ const Authorization = () => {
     e.preventDefault();
     if (!email || !password) {
       toast.warn('All fields must be filled');
+      return;
     }
-
     dispatch(login({ email, password }));
     reset();
   };
@@ -40,6 +40,7 @@ const Authorization = () => {
   return (
     <main>
       <ToastContainer theme="dark" position="top-center" autoClose={3000} />
+
       <form className={styles.authorization} onSubmit={onHandleSubmit}>
         <h1 className={styles.form_title}>Authorization</h1>
         <div className={styles.form_field}>

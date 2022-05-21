@@ -1,11 +1,10 @@
 import Container from './Container';
-
+import RequareAuth from './PrivateRoute';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
+import UserMenu from './UserMenu';
 import Registration from './Pages/Registration';
 import Autorization from './Pages/Autorization';
-import PrivateRoute from './PrivateRoute';
-import UserMenu from './UserMenu';
 import AppBar from './AppBar/AppBar';
 
 export const App = () => {
@@ -13,14 +12,14 @@ export const App = () => {
     <Container>
       <AppBar />
       <Routes>
-        <Route path="login" element={<Autorization />} />
         <Route path="register" element={<Registration />} />
+        <Route path="login" element={<Autorization />} />
         <Route
-          path="/contacts"
+          path="contacts"
           element={
-            <PrivateRoute redirectTo="/contacts">
+            <RequareAuth redirect="contacts">
               <UserMenu />
-            </PrivateRoute>
+            </RequareAuth>
           }
         ></Route>
         <Route path="*" element={<Home />} />
