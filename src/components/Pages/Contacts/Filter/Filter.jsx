@@ -1,7 +1,7 @@
 import styles from './Filter.module.css';
 // import { useState } from 'react';
 // import { searchByName } from 'redux/ItemSlice';
-import { useSelector, useDispatch } from 'react-redux';
+// import { useSelector, useDispatch } from 'react-redux';
 
 import PropType from 'prop-types';
 

@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import styles from '../Navigation/Navigation.module.css';
-import { authSelectors } from 'auth/auth-selectors';
+import { authSelectors } from 'redux/auth/auth-selectors';
 import { useSelector } from 'react-redux';
 
 const Navigation = () => {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
   return (
     <nav>
-      <Link to="/" className={styles.linkHome}>
+      <Link to="/" exact="true" className={styles.linkHome}>
         Home
       </Link>
 
@@ -16,6 +16,7 @@ const Navigation = () => {
           Contacts
         </Link>
       )}
+      <Outlet />
     </nav>
   );
 };
