@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import ListItem from '../ListItem/ListItem';
 import styles from './UserList.module.css';
 
