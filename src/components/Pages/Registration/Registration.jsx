@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { register } from 'redux/auth/auth-operation';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -86,6 +87,10 @@ const Registration = () => {
       </form>
     </main>
   );
+};
+
+Registration.proptype = {
+  Registration: PropTypes.node.isRequired,
 };
 
 export default Registration;

@@ -4,7 +4,7 @@ import UserList from '../Contacts/Filter/UserList/UserList';
 // import { useState } from 'react';
 
 const ContactsViews = () => {
-  const data = [];
+  const data = ['Den', 'Dasha'];
   return (
     <div>
       <Form />

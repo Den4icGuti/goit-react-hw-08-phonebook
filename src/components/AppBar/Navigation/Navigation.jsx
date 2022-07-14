@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from '../Navigation/Navigation.module.css';
 import { authSelectors } from 'redux/auth/auth-selectors';
 import { useSelector } from 'react-redux';
@@ -16,7 +16,6 @@ const Navigation = () => {
           Contacts
         </Link>
       )}
-      <Outlet />
     </nav>
   );
 };

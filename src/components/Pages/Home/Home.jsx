@@ -1,7 +1,8 @@
+import styles from '../Home/Home.module.css';
 const Home = () => {
   return (
     <>
-      <p>Home Page</p>
+      <h1 className={styles.titleHome}>Welcome to phonebook</h1>
     </>
   );
 };
