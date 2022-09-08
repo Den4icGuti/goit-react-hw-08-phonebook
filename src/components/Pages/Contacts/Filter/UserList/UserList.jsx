@@ -15,10 +15,10 @@ const UserList = ({ deleteContact, item }) => {
   return (
     <div className={styles.ListUsers}>
       <ul className={styles.list}>
-        {item.map(items => (
+        {item.map((items, id) => (
           <ListItem
+            key={id}
             className={styles.item}
-            key={items.id}
             {...items}
             deleteContact={deleteContact}
           />
