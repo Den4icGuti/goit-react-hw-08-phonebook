@@ -11,7 +11,7 @@ const ListItem = ({ id, name, number }) => {
       <li className={styles.item} key={id}>
         <span className={styles.nameUser}>{name} </span>
         <span className={styles.phoneNum}>{number} </span>
-        <button type="button" className={styles.btnDel} onClick={() => id}>
+        <button type="button" className={styles.btnDel} onClick={id}>
           Delete
         </button>
       </li>

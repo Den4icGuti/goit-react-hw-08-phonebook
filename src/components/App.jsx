@@ -25,6 +25,7 @@ export const App = () => {
               </RequareAuth>
             }
           ></Route>
+
           <Route path="*" element={<Home />}></Route>
         </Routes>
       </Suspense>
